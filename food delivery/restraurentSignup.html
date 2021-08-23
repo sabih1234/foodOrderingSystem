@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Food Order System</title>
+  <meta name="description" content="Resto">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/select2/select2.min.css">
+  <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/brands.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Josefin+Sans:300,400,700">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <!-- <h2>Modal Signup Form</h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+    
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+    
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+    
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div> -->
+
+    <body data-spy="scroll" data-target="#navbar" class="static-layout">
+      <div id="side-nav" class="sidenav">
+      <a href="javascript:void(0)" id="side-nav-close">&times;</a>
+      
+      <div class="sidenav-content">
+        <p>
+          Kuncen WB1, Wirobrajan 10010, DIY
+        </p>
+        <p>
+          <span class="fs-16 primary-color">(+68) 120034509</span>
+        </p>
+        <p>info@yourdomain.com</p>
+      </div>
+    </div>	<div id="side-search" class="sidenav">
+      <a href="javascript:void(0)" id="side-search-close">&times;</a>
+      <div class="sidenav-content">
+        <form action="">
+    
+          <div class="input-group md-form form-sm form-2 pl-0">
+            <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="input-group-text red lighten-3" id="basic-text1">
+                <i class="fas fa-search text-grey" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+    
+        </form>
+      </div>
+      
+       
+    </div>	<div id="canvas-overlay"></div>
+      <div class="boxed-page">
+        <nav id="navbar-header" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile" href="/">
+                <img src="img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lnr lnr-menu"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-between">
+                    <li class="nav-item only-desktop">
+                        <a class="nav-link" id="side-nav-open" href="#">
+                            <span class="lnr lnr-menu"></span>
+                        </a>
+                    </li>
+                    <div class="d-flex flex-lg-row flex-column">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Login
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="restraurentLogin.html">Login for Restaurant</a>
+                              <a class="dropdown-item" href="userLogin.html">Login as User</a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                
+                <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-between">
+                    <div class="d-flex flex-lg-row flex-column">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Team</a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="reservation.html">Reservation</a>
+                        </li>
+                    </div>
+                    <li class="nav-item">
+                        <a id="side-search-open" class="nav-link" href="#">
+                            <span class="lnr lnr-magnifier"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>	
+
+    
+    <div class="container my-5">
+        <h1>Sign Up As Restaurant</h1>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Restraurent Name</label>
+            <input type="text" class="form-control" id="RestraurentName" placeholder="Restraurent">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" id="number" placeholder="Phone Number">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Country</label>
+            <input type="text" class="form-control" id="country" placeholder="Country">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">password</label>
+            <input type="password" class="form-control" id="password" placeholder="*******">
+        </div>
+        <button onclick="signup()" type="button" class="btn btn-primary">Sign up</button>
+
+
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyB2bI3YS5ZD20yyspLbGzIDrXzh9pzXb78",
+    authDomain: "hackathon-db-d8e5b.firebaseapp.com",
+    projectId: "hackathon-db-d8e5b",
+    storageBucket: "hackathon-db-d8e5b.appspot.com",
+    messagingSenderId: "1070673971670",
+    appId: "1:1070673971670:web:b1618b6dfc6c1ada89bc77"
+};
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+
+</body>
+<script src="restraurentSignup.js"></script>
+
+</html>
